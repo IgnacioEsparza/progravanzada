@@ -9,9 +9,9 @@ package com.VID8.app;
  *
  * @author Ignacio
  */
-public class AlumnoV8 extends PersonaV8{
-    
-    public AlumnoV8(String nombre) {
+public class ProfesorV8 extends PersonaV8{
+   
+    public ProfesorV8(String nombre) {
         super(nombre);
     }
     

@@ -10,5 +10,18 @@ package com.VID8.app;
  * @author Ignacio
  */
 public class PersonaV8 {
-   
+     private String nombre;
+
+    public PersonaV8(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
+
