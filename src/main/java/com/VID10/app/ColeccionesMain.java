@@ -16,11 +16,11 @@ import java.util.List;
 public class ColeccionesMain {
     public static void main(String[] args) {
         
-        int[] arreglo= new int[3];
-        List<Integer> lista = new ArrayList();
-        lista.add(99);
-        lista.add(10000);
-        lista.add(1);
+        //int[] arreglo= new int[3];
+        List<PersonaV10> lista = new ArrayList();
+        lista.add(new PersonaV10(1, "Giuseppe", 66));
+        lista.add(new PersonaV10(2, "Fischio", 22));
+        lista.add(new PersonaV10(3, "Victorine", 21));
         
         //Collections.sort(lista);
         Collections.reverse(lista);
