@@ -24,6 +24,7 @@ public class VID14Main {
         for (String s : lista) {
             System.out.println(s);
         }*/
+        
         Set<PersonaV14> lista = new TreeSet<PersonaV14>();
         lista.add(new PersonaV14(16, "Alberto Jeria", 22));
         lista.add(new PersonaV14(17, "Manueh Albornoz", 23));

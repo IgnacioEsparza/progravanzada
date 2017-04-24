@@ -73,7 +73,7 @@ public class PersonaV14 implements Comparable<PersonaV14>{
 
     @Override
     public String toString() {
-        return "\nRut :" + id + "\nNombre : " + nombre + "\nEdad :" + edad;
+        return "\nRut : " + id + "\nNombre : " + nombre + "\nEdad :" + edad;
     }
     
     public int compareTo(PersonaV14 p) {
