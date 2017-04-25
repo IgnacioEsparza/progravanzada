@@ -11,7 +11,8 @@ import com.VID15.app.*;
  *
  * @author Ignacio
  */
-public class PersonaV16 /*implements Comparable<PersonaV15>*/{
+public class PersonaV16 implements Comparable<PersonaV15> {
+
     private int id;
     private String nombre;
     private int edad;
@@ -47,7 +48,7 @@ public class PersonaV16 /*implements Comparable<PersonaV15>*/{
     }
 
     @Override
-   public int hashCode() {
+    public int hashCode() {
         int hash = 7;
         hash = 19 * hash + this.id;
         hash = 19 * hash + (this.nombre != null ? this.nombre.hashCode() : 0);
@@ -79,20 +80,14 @@ public class PersonaV16 /*implements Comparable<PersonaV15>*/{
         return true;
     }
 
-    
-    
-
     @Override
     public String toString() {
         return "\nRut : " + id + "\nNombre : " + nombre + "\nEdad :" + edad;
     }
-    
-   /* public int compareTo(PersonaV15 p) {
-        //return this.edad - p.getEdad();4
-        return this.nombre.compareTo(p.getNombre());
-                
-    }*/
-    
-    
-    
+
+    public int compareTo(PersonaV15 p) {
+        return this.edad - p.getEdad();
+        // this.nombre.compareTo(p.getNombre());     
+    }
+
 }
