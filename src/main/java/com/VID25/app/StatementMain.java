@@ -20,7 +20,7 @@ public class StatementMain {
         as.desconectar();
 
         if (rpta) {
-            System.out.println("Verificación Correcta, Ingresando al Sistema...");
+            System.out.println("VerificaciÃ³n Correcta, Ingresando al Sistema...");
         } else {
             System.out.println("Credenciales Incorrectas, Acceso Denegado");
         }

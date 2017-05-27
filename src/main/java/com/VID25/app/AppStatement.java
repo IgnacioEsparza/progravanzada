@@ -24,11 +24,10 @@ public class AppStatement {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = null;
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbtest0", "root", "");
-            System.out.println("Conexión Exitosa");
-            JOptionPane.showMessageDialog(null, "Conexión Exitosa");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbtest", "root", "");
+            JOptionPane.showMessageDialog(null, "ConexiÃ³n Exitosa");
         } catch (Exception e) {
-            System.out.println("Error");
+            System.out.println("Error"+ e);
         }
     }
 
