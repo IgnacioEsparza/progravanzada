@@ -5,7 +5,7 @@
  */
 package com.VID24.app;
 
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
 
 /**
@@ -17,9 +17,7 @@ public class AppExcepciones {
     public void mostrar() {
         try {
             throw new IOException("IOExceptions");
-        } catch (FileNotFoundException ffe) {
-            System.out.println(ffe.getMessage());
-        } catch (IOException e) {
+        } catch (NullPointerException | IOException | NumberFormatException e) {
             System.out.println(e.getMessage());
         }
     }
