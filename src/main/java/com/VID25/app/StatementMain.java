@@ -16,7 +16,7 @@ public class StatementMain {
     public static void main(String[] args) throws SQLException {
         AppStatement as = new AppStatement();
         as.conectar();
-        boolean rpta = as.leerStatement(new Persona(1, "Juan", "158juan"));
+        boolean rpta = as.leerStatement(new Persona(1, "Pedro", "pedrocontrasegna' OR ' 'M' = 'M'"));
         as.desconectar();
 
         if (rpta) {
